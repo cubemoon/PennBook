@@ -1,0 +1,24 @@
+!!!
+html(lang="en")
+	head
+		block head
+			block title
+				title PennBook
+			block meta
+				meta(charset='utf-8')
+				meta(name='viewport' content='width=device-width, initial-scale=1.0')
+				meta(http-equiv="X-UA-Compatible", content="IE=edge")
+				meta(name='description', content='PennBook by Team19')
+				meta(name='keywords', content='PennBook, social site')
+			link(rel='stylesheet', href='/css/bootstrap.css')
+			link(rel='stylesheet', href='/css/style.css')
+			block scripts
+	body
+		include header-bare
+
+		block content
+
+		include footer
+		
+		script(src='/js/jquery.js')
+		script(src='/js/jquery.bootstrap.js')

@@ -1,0 +1,25 @@
+extends layout
+block scripts
+	script(src="/js/main.js")
+
+block content
+	div.container
+		div.row
+			div.col-md-10
+				div.row
+					div.col-md-12
+						div.status.panel.panel-default
+							div.panel-heading Search Results
+						-if (!results || results.length === 0) { 
+							div.status.panel.panel-default
+									div.panel-body No Hits Found
+						-} else {
+							-for(var i = 0; i < results.length; i++){ 
+								a(href="/user/#{results[i].username}").nd
+									div.status.panel.panel-default
+										div.panel-body
+											img.avatar(src="#{results[i].avatar}")
+											h2(style="margin:0") #{results[i].fullname}
+							-}
+						- }
+			div.col-md-2

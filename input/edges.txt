@@ -1,0 +1,14 @@
+user1	user2;affiliation
+user1	user3;friend
+user2	user3;affiliation
+user4	user5;friend
+user4	user3;affiliation
+user4	user1;friend
+user1	user5;friend
+user2	user6;affiliation
+user3	user6;friend
+user7	user1;affiliation
+user7	user4;friend
+user7	user5;pending
+user8	user1;pending
+user1	user9;pending

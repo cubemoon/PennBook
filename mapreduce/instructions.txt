@@ -1,0 +1,30 @@
+Command Lines:
+
+ant jar // build jar file
+hadoop jar team19.jar edu.upenn.team19.PennBookDriver ... // Before the command lines below
+
+init <inputDir> <outputDir> <#reducers> 
+ 
+iter <inputDir> <outputDir> <#reducers>
+
+diff <inputDir1> <inputDir2> <outputDir> <#reducers> 
+
+finish <inputDir> <outputDir> <#reducers> 
+
+composite <inputDir> <outputDir> <intermDir1> <intermDir2> <#reducers> <#rounds>
+
+File Format (every line):
+Input file:
+<username>	<username>||<state>
+
+For state, there are three types: friend, affiliation, pending. Friend means 
+the users are friend of each other. Affiliation means that they're not only 
+friends but also share the same affiliation (like school). Pending means that 
+the user has sent friend request to the other user but have not been confirmed 
+yet.
+
+Intermediate file: 
+<username>	<edge weight>,<username>;...||<rank>,<username>;...
+
+Final output format:
+<username>	<username>:<rank>;...

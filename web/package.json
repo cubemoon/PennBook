@@ -1,0 +1,13 @@
+{
+	"name": "PennBook",
+	"version": "0.9.0",
+	"dependencies": {
+		"express": "*",
+		"jade": "*",
+		"aws-sdk":"*"
+	},
+	"engines": {
+		"node": "0.8.x",
+		"npm": "1.1.x"	
+	}
+}

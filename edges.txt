@@ -1,0 +1,10 @@
+shizuku	misaki001;friend
+admin	DerekHe;friend
+shizuku	jabbany;friend
+admin	dimpurr;friend
+misaki001	dimpurr;friend
+jabbany	admin;friend
+admin	asdasd;friend
+admin	timjames;friend
+nunotaba	jabbany;pending
+Shitty	DerekHe;pending

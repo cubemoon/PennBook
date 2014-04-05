@@ -1,0 +1,66 @@
+body {
+  min-height: 600px;
+  padding-top: 70px;
+}
+
+.navbar-pbk {
+  background-color: #563D7C;
+  border-color: #463265;
+}
+
+h3.timeline{
+  color:#FFF;
+  padding-top:90px;
+  margin:0;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.status{
+  margin-top:20px;
+}
+
+a.nd{
+  text-decoration:none;
+}
+
+img.avatar{
+  height:64px;
+  width:64px;
+  float:left;
+  margin-right:10px;
+}
+.panel-body.reply{
+  border-bottom:1px dashed #aaa;
+}
+img.avatar-small{
+  height:32px;
+  width:32px;
+  float:left;
+  margin-right:10px;
+}
+img.avatar-small.border{
+  border-right:1px solid #ddd;
+}
+.panel-body.reply{
+  padding:5px;
+}
+
+.register .has-success input{
+  background:#efe;
+}
+
+.register .has-error input{
+  background:#fee;
+}
+
+.notification{
+  min-width:300px;
+  height: 50px;
+}
+
+.notification.c{
+	padding: auto 0 auto 0;
+	text-align:center;	
+}
+
+#infovis-label {color:#fff}

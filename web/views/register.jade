@@ -1,0 +1,41 @@
+extends layout-bare
+block scripts
+	script(src="/js/register.js") 
+
+block content
+	div.container
+		div.row
+			div.col-md-4
+			div.col-md-7
+				div.status.panel.panel-default
+					div.panel-heading Register
+					div.panel-body
+						form.register(action="", method="POST")
+							div.form-group
+								label(for="fullname") Your name
+								input.form-control(name="fullname", id="fullname", type="text", placeholder="John Doe")
+							div.form-group
+								label(for="username") Pick a username
+								input.form-control(name="username", id="username", type="text", placeholder="Username")
+							div.form-group
+								label(for="email") Email
+								input.form-control(name="email", id="email", type="text", placeholder="foo@bar.com")
+							div.form-group
+								label(for"password") Choose your password
+								input.form-control(name="password", id="password", type="password")
+							div.form-group
+								label(for"password-repeat") Type it in again
+								input.form-control(name="passwordrpt", id="password-repeat", type="password")
+							
+							h3 Tell us a bit about yourself
+							div.form-group
+								label(for="affiliate") Affiliation 
+								input.form-control(name="affiliate", id="affiliate", type="text", placeholder="University of Pennsylvania")
+							div.form-group
+								label(for="interests") Interests 
+								input.form-control(name="interests", id="interests", type="text", placeholder="hacking, jpop, swimming")
+							div.form-group
+								label(for="birthday") Birth Date
+								input.form-control(name="birthday", id="birthday", type="text", placeholder="YYYY-MM-DD")
+							
+							button(id="submit", type="submit").btn.btn-primary.btn-block Register Now

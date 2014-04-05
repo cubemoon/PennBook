@@ -1,0 +1,13 @@
+extends layout
+block scripts
+	script(src="/js/visualize.js")
+
+block footscripts
+	script(src="/js/jit.js")
+	
+block content
+	div.container
+		div#center-container(style="position:absolute; left:0; right:0; top:0; bottom:0; background:#333")
+			div.pull-left(style="margin:60px 0 0 30px;")
+				h2(style="color:#fff; z-index: 9999;") Friend Visualization
+			div#infovis(style="position:absolute;left:0; right:0; top:0; bottom:0;")

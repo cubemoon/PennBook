@@ -1,0 +1,40 @@
+extends layout-bare
+block scripts
+	script(src="/js/login.js")
+
+block content
+	div.container
+		div.row
+			div.col-md-4
+			div.col-md-4
+				div.status.panel.panel-default
+					div.panel-heading Log In
+					div.panel-body
+						- if(msgid === "2") {
+							div.alert.alert-danger
+								strong Error
+								p Username or password incorrect
+						- } else if(msgid === "1"){
+							div.alert.alert-danger
+								Strong Oops!
+								p You forgot to fill in a field
+						- } else if(msgid === "3"){
+							div.alert.alert-danger
+								Strong Yikes!
+								p Your nonce token expired. Please refresh this page.
+						- }
+						form.form-group(action="", method="post", id="loginform")
+							input(type="hidden", name="nonce", value="#{nonce}")
+							label(for="username") Username
+							input.form-control(name="username", id="username", type="text", placeholder="Username")
+							label(for"password") Password
+							input.form-control(name="password", id="password", type="password")
+							div.checkbox
+								label
+									input(id="remember", name="remember", type="checkbox", checked="true") 
+									| Remember Me
+							button(type="submit", id="login").btn.btn-primary.btn-block Login
+							br
+							label(for="register") Don't have an account yet?
+							a(id="register",href="/register").btn.btn-success.btn-block Register
+			div.col-md-4
